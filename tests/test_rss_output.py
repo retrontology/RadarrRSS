@@ -28,6 +28,8 @@ def test_build_rss_includes_requested_metadata_tags() -> None:
     root = ET.fromstring(rss)
     item = root.find("./channel/item")
 
+    assert "\n  <channel>" in rss
+    assert "\n    <item>" in rss
     assert item is not None
     assert item.findtext("title") == "Fight Club"
     assert item.findtext("guid") == "tt0137523"

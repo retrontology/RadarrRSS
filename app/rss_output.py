@@ -29,6 +29,7 @@ def build_rss(feed: FeedDefinition, movies: list[EnrichedMovie]) -> str:
     for movie in movies:
         _add_item(channel, movie)
 
+    ET.indent(rss, space="  ")
     return '<?xml version="1.0" encoding="UTF-8"?>\n' + ET.tostring(
         rss,
         encoding="unicode",

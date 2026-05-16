@@ -1,0 +1,30 @@
+Source URL: https://www.blu-ray.com/rss/newreleasesfeed.xml
+Title: newreleasesfeed.xml
+
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+<title>Blu-ray.com - Movies - New Releases</title>
+<link>https://www.blu-ray.com</link>
+<description>The latest Blu-ray releases</description>
+<item>
+<title>Fight Club 4K (Blu-ray)</title>
+<link>https://www.blu-ray.com/movies/Fight-Club-4K-Blu-ray/406956/</link>
+<guid>https://www.blu-ray.com/movies/Fight-Club-4K-Blu-ray/406956/</guid>
+<description>&lt;b&gt;&lt;font color="#666666"&gt;Disney / Buena Vista | 1999 | 139 mins | Rated R | May 12, 2026&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;An insomniac office worker and a devil-may-care soapmaker form an underground fight club.</description>
+<pubDate>Tue, 12 May 2026 00:00:00 -0400</pubDate>
+<source url="https://www.blu-ray.com/">Blu-ray.com New Releases</source>
+<category>blu-ray</category>
+</item>
+<item>
+<title>Twinless (Blu-ray)</title>
+<link>https://www.blu-ray.com/movies/Twinless-Blu-ray/410359/</link>
+<guid>https://www.blu-ray.com/movies/Twinless-Blu-ray/410359/</guid>
+<description>&lt;b&gt;&lt;font color="#666666"&gt;Lionsgate Films | 2025 | 100 mins | Rated R | May 12, 2026&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;Two grieving men bond in a support group and form an unlikely friendship.</description>
+<pubDate>Tue, 12 May 2026 00:00:00 -0400</pubDate>
+<source url="https://www.blu-ray.com/">Blu-ray.com New Releases</source>
+<category>blu-ray</category>
+</item>
+</channel>
+</rss>
+

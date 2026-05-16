@@ -1,0 +1,17 @@
+services:
+  radarr-rss:
+    build: .
+    container_name: radarr-rss
+    env_file:
+      - path: .env
+        required: false
+    ports:
+      - "${APP_PORT:-8734}:8734"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8734/health', timeout=5).read()"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    restart: unless-stopped
+

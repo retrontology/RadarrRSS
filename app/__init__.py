@@ -1,0 +1,2 @@
+"""Radarr RSS adapter service."""
+

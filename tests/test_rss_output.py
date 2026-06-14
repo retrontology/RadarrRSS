@@ -32,7 +32,7 @@ def test_build_rss_includes_requested_metadata_tags() -> None:
     assert "\n    <item>" in rss
     assert item is not None
     assert item.findtext("title") == "Fight Club"
-    assert item.findtext("guid") == "tt0137523"
+    assert item.findtext("guid") == "550"
     assert item.findtext(f"{{{RADARRRSS_NS}}}originalName") == "Fight Club 4K (Blu-ray)"
     assert item.findtext(f"{{{RADARRRSS_NS}}}tmdbTitle") == "Fight Club"
     assert item.findtext(f"{{{RADARRRSS_NS}}}tmdbId") == "550"

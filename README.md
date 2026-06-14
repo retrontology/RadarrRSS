@@ -23,10 +23,10 @@ REQUEST_TIMEOUT_SECONDS=10
 CACHE_TTL_SECONDS=1800
 USER_AGENT=RadarrRSS/0.1
 MATCH_CONFIDENCE_THRESHOLD=0.82
-INCLUDE_UNMATCHED_ITEMS=true
+INCLUDE_UNMATCHED_ITEMS=false
 ```
 
-`TMDB_API_KEY` is optional for startup, but without it the feed will return unmatched items with blank TMDB/IMDB metadata.
+Radarr's RSS import list parser expects each item `guid` to be a numeric TMDB ID, so `TMDB_API_KEY` is required for a useful Radarr feed. With the default `INCLUDE_UNMATCHED_ITEMS=false`, titles that cannot be matched on TMDB are omitted instead of being sent to Radarr for title-only matching. Set `INCLUDE_UNMATCHED_ITEMS=true` only when debugging the adapter output directly.
 
 ## Docker
 

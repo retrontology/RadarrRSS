@@ -51,7 +51,7 @@ def _add_item(channel: ET.Element, movie: EnrichedMovie) -> None:
     if source.category:
         _add_text(item, "category", source.category)
 
-    guid = match.imdb_id if match is not None and match.imdb_id else source.guid
+    guid = str(match.tmdb_id) if match is not None else source.guid
     guid_element = _add_text(item, "guid", guid)
     guid_element.set("isPermaLink", "false")
 

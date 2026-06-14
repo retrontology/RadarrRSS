@@ -47,6 +47,6 @@ def get_settings() -> Settings:
             "RadarrRSS/0.1 (+https://github.com/retrontology/RadarrRSS)",
         ),
         match_confidence_threshold=_get_float("MATCH_CONFIDENCE_THRESHOLD", 0.82),
-        include_unmatched_items=_get_bool("INCLUDE_UNMATCHED_ITEMS", True),
+        include_unmatched_items=_get_bool("INCLUDE_UNMATCHED_ITEMS", False),
     )
 
